@@ -1,0 +1,8 @@
+{
+	"WorkshopId": 3106631574,
+	"Title": "Automatically Reload",
+	"Description": "Automatically reloads your gun when you shoot (and you're out of ammo) instead of throwing an annoying popup.",
+	"Tags": "Script,Stable",
+	"Visibility": "0",
+	"ImagePath": "preview.png"
+}
