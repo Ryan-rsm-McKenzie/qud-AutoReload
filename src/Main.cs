@@ -1,12 +1,11 @@
 #nullable enable
 
+using HarmonyLib;
 using System;
 using System.Collections.Generic;
 using System.Reflection.Emit;
-using HarmonyLib;
 using XRL.Core;
 using XRL.UI;
-using XRL;
 using XRL.World;
 
 namespace ItsYourChoice
@@ -16,11 +15,6 @@ namespace ItsYourChoice
 	[HarmonyPatch(new Type[] { })]
 	public class XRLCore_PlayerTurn
 	{
-		public static void Detour()
-		{
-			CommandReloadEvent.Execute(The.Player);
-		}
-
 		public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
 		{
 			var matcher = new CodeMatcher(instructions);
