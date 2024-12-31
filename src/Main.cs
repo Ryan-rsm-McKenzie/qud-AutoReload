@@ -77,10 +77,11 @@ namespace ItsYourChoice
 				)),
 				new(OpCodes.Ldc_I4_0),
 				new(OpCodes.Ldc_I4_3),
+				new(OpCodes.Ldc_I4_0),
 				new(OpCodes.Call, AccessTools.Method(
 					type: typeof(ControlManager),
 					name: nameof(ControlManager.getCommandInputDescription),
-					parameters: new Type[] { typeof(string), typeof(bool), typeof(bool), typeof(ControlManager.InputDeviceType),  }
+					parameters: new Type[] { typeof(string), typeof(bool), typeof(bool), typeof(ControlManager.InputDeviceType),  typeof(bool) }
 				)),
 				new(OpCodes.Ldstr, ")"),
 				new(OpCodes.Call, AccessTools.Method(

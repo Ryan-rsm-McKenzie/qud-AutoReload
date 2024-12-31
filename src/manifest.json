@@ -2,5 +2,5 @@
 	"Author": "Ryan McKenzie",
 	"Description": "Automatically reloads your gun when you shoot (and you're out of ammo) instead of throwing an annoying popup.",
 	"ID": "RSM_AutoReload",
-	"Version": "1.0.0"
+	"Version": "1.0.1"
 }
