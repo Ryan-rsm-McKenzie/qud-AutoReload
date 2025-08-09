@@ -70,10 +70,9 @@ namespace ItsYourChoice
 				new(OpCodes.Pop),
 				new(OpCodes.Ldstr, "You need to reload! ("),
 				new(OpCodes.Ldstr, "CmdReload"),
-				new(OpCodes.Call, AccessTools.Method(
+				new(OpCodes.Ldsfld, AccessTools.Field(
 					type: typeof(Options),
-					name: "get_ModernUI",
-					parameters: new Type[] { }
+					name: nameof(Options.ModernUI)
 				)),
 				new(OpCodes.Ldc_I4_0),
 				new(OpCodes.Ldc_I4_3),
